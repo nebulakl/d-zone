@@ -47,7 +47,7 @@ function initWebsocket() {
     
     // TODO: We don't need websocket-stream, we can use the native browser websocket api
     var WebSocket = require('websocket-stream');
-    ws = WebSocket('wss://honpanlung.xyz:444');
+    ws = WebSocket('wss://yourdomain.here:reverse_proxy_port/');
     //var TestSocket = require('./script/engine/tester.js'),
     //    ws = new TestSocket(50,3000);
     ws.on('data',function(data) {
